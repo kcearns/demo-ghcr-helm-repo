@@ -1,20 +1,17 @@
 # Default values for nginx-app
 
 replicaCount: 1
-
 image:
   repository: nginx
-  tag: 1.24.0
+  tag: v2.3.0
   pullPolicy: IfNotPresent
-
 service:
   type: ClusterIP
   port: 80
-
 resources:
   limits:
     cpu: 200m
     memory: 256Mi
   requests:
     cpu: 100m
-    memory: 128Mi 
+    memory: 128Mi
