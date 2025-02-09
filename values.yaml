@@ -3,7 +3,7 @@
 replicaCount: 1
 image:
   repository: nginx
-  tag: v2.12.0
+  tag: staging-v2.13.0
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
